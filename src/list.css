@@ -1,7 +1,11 @@
-@media only screen and (orientation: portrait) {
+@media only screen and (max-width: 45em) {
   #listArea {
-    height: 25svh;
-    resize: none;
+    height: 10svh;
+  }
+}
+@media only screen and (min-width: 45em) {
+  #listArea {
+    height: 90svh;
   }
 }
 
@@ -30,7 +34,7 @@ form {
   display: flex;
 }
 #displayArea, #errorArea {
-  min-width: 20em;
+  min-width: 25em;
   max-width: 100vw;
   width: calc(100% - 25em);
   justify-content: center;
@@ -46,8 +50,7 @@ form {
   flex-grow:1;
   min-width: 20em;
   min-height: 10em;
-  height: 50svh;
-  max-height: 100svh;
+  max-height: 90svh;
   overflow-y: scroll;
   resize: vertical;
   border: dashed lightgrey;

@@ -41,11 +41,19 @@ function copyList() {
   }
 }
 
+function resizeAction() {
+  if(listArea.style) {
+    console.log(listArea.style);
+    listArea.removeAttribute("style")
+  }
+}
+
 function main() {
   window.onbeforeunload = unload;
   submitButton.onclick = updateDisplay;
   clearButton.onclick = resetListArea;
   copyButton.onclick = copyList;
+  window.onresize = resizeAction;
   loadUrlParameters();
 }
 
