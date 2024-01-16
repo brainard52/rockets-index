@@ -1,0 +1,459 @@
+{
+  "BS": [
+    "base1"
+  ],
+  "JU": [
+    "base2"
+  ],
+  "PR": [
+    "basep"
+  ],
+  "FO": [
+    "base3"
+  ],
+  "B2": [
+    "base4"
+  ],
+  "TR": [
+    "base5"
+  ],
+  "G1": [
+    "gym1"
+  ],
+  "G2": [
+    "gym2"
+  ],
+  "N1": [
+    "neo1"
+  ],
+  "N2": [
+    "neo2"
+  ],
+  "SI": [
+    "si1"
+  ],
+  "N3": [
+    "neo3"
+  ],
+  "N4": [
+    "neo4"
+  ],
+  "LC": [
+    "base6"
+  ],
+  "EX": [
+    "ecard1"
+  ],
+  "BP": [
+    "bp"
+  ],
+  "AQ": [
+    "ecard2"
+  ],
+  "SK": [
+    "ecard3"
+  ],
+  "RS": [
+    "ex1"
+  ],
+  "SS": [
+    "ex2"
+  ],
+  "PR-NP": [
+    "np"
+  ],
+  "DR": [
+    "ex3"
+  ],
+  "MA": [
+    "ex4"
+  ],
+  "HL": [
+    "ex5"
+  ],
+  "TK1A": [
+    "tk1a"
+  ],
+  "TK1B": [
+    "tk1b"
+  ],
+  "RG": [
+    "ex6"
+  ],
+  "POP1": [
+    "pop1"
+  ],
+  "TRR": [
+    "ex7"
+  ],
+  "DX": [
+    "ex8"
+  ],
+  "EM": [
+    "ex9"
+  ],
+  "UF": [
+    "ex10"
+  ],
+  "POP2": [
+    "pop2"
+  ],
+  "DS": [
+    "ex11"
+  ],
+  "LM": [
+    "ex12"
+  ],
+  "TK2A": [
+    "tk2a"
+  ],
+  "TK2B": [
+    "tk2b"
+  ],
+  "POP3": [
+    "pop3"
+  ],
+  "HP": [
+    "ex13"
+  ],
+  "CG": [
+    "ex14"
+  ],
+  "POP4": [
+    "pop4"
+  ],
+  "DF": [
+    "ex15"
+  ],
+  "PK": [
+    "ex16"
+  ],
+  "POP5": [
+    "pop5"
+  ],
+  "DP": [
+    "dp1"
+  ],
+  "PR-DPP": [
+    "dpp"
+  ],
+  "MT": [
+    "dp2"
+  ],
+  "POP6": [
+    "pop6"
+  ],
+  "SW": [
+    "dp3"
+  ],
+  "GE": [
+    "dp4"
+  ],
+  "POP7": [
+    "pop7"
+  ],
+  "MD": [
+    "dp5"
+  ],
+  "LA": [
+    "dp6"
+  ],
+  "POP8": [
+    "pop8"
+  ],
+  "SF": [
+    "dp7"
+  ],
+  "PL": [
+    "pl1"
+  ],
+  "POP9": [
+    "pop9"
+  ],
+  "RR": [
+    "pl2"
+  ],
+  "SV": [
+    "pl3"
+  ],
+  "AR": [
+    "pl4"
+  ],
+  "RM": [
+    "ru1"
+  ],
+  "HS": [
+    "hgss1"
+  ],
+  "PR-HS": [
+    "hsp"
+  ],
+  "UL": [
+    "hgss2"
+  ],
+  "UD": [
+    "hgss3"
+  ],
+  "TM": [
+    "hgss4"
+  ],
+  "CL": [
+    "col1"
+  ],
+  "PR-BLW": [
+    "bwp"
+  ],
+  "BLW": [
+    "bw1"
+  ],
+  "MCD11": [
+    "mcd11"
+  ],
+  "EPO": [
+    "bw2"
+  ],
+  "NVI": [
+    "bw3"
+  ],
+  "NXD": [
+    "bw4"
+  ],
+  "DEX": [
+    "bw5"
+  ],
+  "MCD12": [
+    "mcd12"
+  ],
+  "DRX": [
+    "bw6"
+  ],
+  "DRV": [
+    "dv1"
+  ],
+  "BCR": [
+    "bw7"
+  ],
+  "PLS": [
+    "bw8"
+  ],
+  "PLF": [
+    "bw9"
+  ],
+  "PLB": [
+    "bw10"
+  ],
+  "PR-XY": [
+    "xyp"
+  ],
+  "LTR": [
+    "bw11"
+  ],
+  "KSS": [
+    "xy0"
+  ],
+  "XY": [
+    "xy1"
+  ],
+  "FLF": [
+    "xy2"
+  ],
+  "MCD14": [
+    "mcd14"
+  ],
+  "FFI": [
+    "xy3"
+  ],
+  "PHF": [
+    "xy4"
+  ],
+  "PRC": [
+    "xy5"
+  ],
+  "DCR": [
+    "dc1"
+  ],
+  "ROS": [
+    "xy6"
+  ],
+  "AOR": [
+    "xy7"
+  ],
+  "BKT": [
+    "xy8"
+  ],
+  "MCD15": [
+    "mcd15"
+  ],
+  "BKP": [
+    "xy9"
+  ],
+  "GEN": [
+    "g1"
+  ],
+  "FCO": [
+    "xy10"
+  ],
+  "STS": [
+    "xy11"
+  ],
+  "MCD16": [
+    "mcd16"
+  ],
+  "EVO": [
+    "xy12"
+  ],
+  "SUM": [
+    "sm1"
+  ],
+  "PR-SM": [
+    "smp"
+  ],
+  "GRI": [
+    "sm2"
+  ],
+  "BUS": [
+    "sm3"
+  ],
+  "SLG": [
+    "sm35"
+  ],
+  "CIN": [
+    "sm4"
+  ],
+  "MCD17": [
+    "mcd17"
+  ],
+  "UPR": [
+    "sm5"
+  ],
+  "FLI": [
+    "sm6"
+  ],
+  "CES": [
+    "sm7"
+  ],
+  "DRM": [
+    "sm75"
+  ],
+  "MCD18": [
+    "mcd18"
+  ],
+  "LOT": [
+    "sm8"
+  ],
+  "TEU": [
+    "sm9"
+  ],
+  "DET": [
+    "det1"
+  ],
+  "UNB": [
+    "sm10"
+  ],
+  "UNM": [
+    "sm11"
+  ],
+  "HIF": [
+    "sm115"
+  ],
+  "SMA": [
+    "sma"
+  ],
+  "MCD19": [
+    "mcd19"
+  ],
+  "CEC": [
+    "sm12"
+  ],
+  "PR-SW": [
+    "swshp"
+  ],
+  "SSH": [
+    "swsh1"
+  ],
+  "RCL": [
+    "swsh2"
+  ],
+  "DAA": [
+    "swsh3"
+  ],
+  "FUT20": [
+    "fut20"
+  ],
+  "CPA": [
+    "swsh35"
+  ],
+  "VIV": [
+    "swsh4"
+  ],
+  "MCD21": [
+    "mcd21"
+  ],
+  "SHF": [
+    "swsh45",
+    "swsh45sv"
+  ],
+  "BST": [
+    "swsh5"
+  ],
+  "CRE": [
+    "swsh6"
+  ],
+  "EVS": [
+    "swsh7"
+  ],
+  "CEL": [
+    "cel25",
+    "cel25c"
+  ],
+  "FST": [
+    "swsh8"
+  ],
+  "BRS": [
+    "swsh9",
+    "swsh9tg"
+  ],
+  "ASR": [
+    "swsh10",
+    "swsh10tg"
+  ],
+  "PGO": [
+    "pgo"
+  ],
+  "MCD22": [
+    "mcd22"
+  ],
+  "LOR": [
+    "swsh11",
+    "swsh11tg"
+  ],
+  "SIT": [
+    "swsh12",
+    "swsh12tg"
+  ],
+  "PR-SV": [
+    "svp"
+  ],
+  "CRZ": [
+    "swsh12pt5",
+    "swsh12pt5gg"
+  ],
+  "SVI": [
+    "sv1"
+  ],
+  "SVE": [
+    "sve"
+  ],
+  "PAL": [
+    "sv2"
+  ],
+  "OBF": [
+    "sv3"
+  ],
+  "MEW": [
+    "sv3pt5"
+  ],
+  "PAR": [
+    "sv4"
+  ]
+}
