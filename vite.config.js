@@ -6,7 +6,7 @@ export default defineConfig({
   base: "/rockets-index",
   root: resolve(__dirname, 'src'),
   build: {
-    outDir: resolve(__dirname, 'dist'),
+    outDir: resolve(__dirname, 'docs'),
     emptyOutDir: true,
     rollupOptions: {
       input: {
