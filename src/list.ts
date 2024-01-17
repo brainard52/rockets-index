@@ -43,7 +43,6 @@ function copyList() {
 
 function resizeAction() {
   if(listArea.style) {
-    console.log(listArea.style);
     listArea.removeAttribute("style")
   }
 }
@@ -119,7 +118,7 @@ function parameterize(list: Array) {
   let parameters = "";
   for(let i = 0; i<list.length; i++) {
     let parameter = list[i]["count"]+ ",";
-    let setNumber = null;
+    let setNumber = undefined;
     for(let j = 0; j < Object.keys(orderedCodes).length; j++) {
       if(orderedCodes[j]["onlineCode"] == list[i]["onlineCode"]) {
         let collectorNumbers = cards[orderedCodes[j]["id"]]["cards"].map(function (card) {return card["number"]}).sort();
@@ -128,8 +127,17 @@ function parameterize(list: Array) {
           setNumber = j;
           break;
         }
+        else {
+          console.log(list[i])
+          displayError("Could not find " + list[i]["name"] + " " + list[i]["onlineCode"] + " " + list[i]["collectorNumber"]);
+          if(collectorNumbers.length > 0) {
+            displayError("Other set codes from this set look like this: " + collectorNumbers[0])
+          }
+          return;
+        }
       }
     }
+    console.log(orderedCards[setNumber])
     for(let j = 0; j < Object.keys(orderedCards[setNumber]).length; j++) {
       if(list[i]["collectorNumber"] == orderedCards[setNumber][j]["number"]) {
         parameter = parameter + j + ":";

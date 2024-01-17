@@ -28,7 +28,7 @@ form {
   max-width: 20em;
 }
 .hide {
-  display: none;
+  display: none !important;
 }
 #displayArea {
   display: flex;

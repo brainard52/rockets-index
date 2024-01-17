@@ -16,7 +16,6 @@ with open(sets_file, 'r') as sets_json:
     sets = json.loads(sets_json.read())['data']
 
 onlineCodes = [x['onlineCode'] for x in sets]
-print(onlineCodes)
 
 result = ""
 with open(list_file, 'r') as list_csv:

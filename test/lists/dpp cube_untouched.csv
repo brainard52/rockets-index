@@ -1,0 +1,722 @@
+"Venusaur","CG",28
+"Venusaur","pgo",3
+"Venusaur","SV",13
+"Venusaur","SLG",3
+"Venusaur","SLG",3
+"Ivysaur","CG",34
+"Ivysaur","pgo",2
+"Ivysaur","SV",62
+"Ivysaur","SLG",2
+"Ivysaur","sv3pt5",2
+"Bulbasaur","DET",1
+"Bulbasaur","CG",45
+"Bulbasaur","pgo",1
+"Bulbasaur","SV",93
+"Bulbasaur","SLG",1
+"Bulbasaur","sv3pt5",1
+"Torterra","SF",11
+"Torterra","UPR",9
+"Torterra","FLI",58
+"Torterra","swsh9",8
+"Torterra","swsh9",8
+"Grotle","PLS",2
+"Grotle","DP",49
+"Grotle","UPR",8
+"Grotle","swsh9",7
+"Grotle","swsh9",7
+"Turtwig","PLS",1
+"Turtwig","DP",103
+"Turtwig","MD",77
+"Turtwig","PL",101
+"Turtwig","UPR",6
+"Turtwig","swsh9",6
+"Vileplume","BCR",3
+"Vileplume","BUS",6
+"Vileplume","BUS",6
+"Vileplume","AOR",3
+"Vileplume","AOR",3
+"Gloom","LA",97
+"Gloom","UNB",7
+"Gloom","UNB",7
+"Gloom","swsh12pt5",2
+"Gloom","AOR",2
+"Oddish","LA",112
+"Oddish","UNB",5
+"Oddish","UNB",5
+"Oddish","BUS",4
+"Oddish","swsh12pt5",1
+"Oddish","AOR",1
+"Heracross","BUS",11
+"Heracross","sv2",6
+"Empoleon","DEX",29
+"Empoleon","DEX",29
+"Empoleon","SF",2
+"Empoleon","UPR",34
+"Empoleon","FLI",81
+"Prinplup","DP",58
+"Prinplup","PL",59
+"Prinplup","UPR",33
+"Prinplup","swsh9",36
+"Prinplup","BKT",37
+"Piplup","DP",93
+"Piplup","SV",121
+"Piplup","CEC",54
+"Piplup","UPR",31
+"Piplup","UPR",32
+"Piplup","swsh9",35
+"Blastoise","BCR",31
+"Blastoise","pgo",17
+"Blastoise","PL",2
+"Blastoise","TEU",25
+"Blastoise","TEU",25
+"Wartortle","BCR",30
+"Wartortle","CG",42
+"Wartortle","pgo",16
+"Wartortle","UNB",34
+"Wartortle","sv3pt5",8
+"Squirtle","BCR",29
+"Squirtle","BCR",29
+"Squirtle","CG",64
+"Squirtle","pgo",15
+"Squirtle","PL",96
+"Squirtle","sv3pt5",7
+"Quagsire","PLF",22
+"Quagsire","UF",44
+"Quagsire","DRM",26
+"Quagsire","DRM",26
+"Quagsire","AOR",39
+"Wooper","PLF",21
+"Wooper","UF",79
+"Wooper","TRR",81
+"Wooper","DRM",25
+"Wooper","AOR",38
+"Lapras","LM",8
+"Lapras","pgo",23
+"Lapras","BKP",28
+"Infernape","SF",3
+"Infernape","UPR",23
+"Infernape","FLI",59
+"Infernape","swsh9",26
+"Infernape","STS",20
+"Monferno","PLS",16
+"Monferno","DP",56
+"Monferno","MD",41
+"Monferno","UPR",22
+"Monferno","swsh9",25
+"Chimchar","DP",76
+"Chimchar","MD",56
+"Chimchar","MD",57
+"Chimchar","UPR",20
+"Chimchar","UPR",21
+"Chimchar","swsh9",24
+"Charizard","pgo",10
+"Charizard","pgo",10
+"Charizard","TEU",14
+"Charizard","PR-SM","SM226"
+"Charizard","VIV",25
+"Charmeleon","BCR",19
+"Charmeleon","PK",28
+"Charmeleon","pgo",9
+"Charmeleon","TEU",13
+"Charmeleon","sv3pt5",5
+"Charmander","PK",48
+"Charmander","pgo",8
+"Charmander","TEU",11
+"Charmander","sv3",26
+"Charmander","sv3pt5",4
+"Charmander","VIV",23
+"Arcanine","NXD",12
+"Arcanine","SW",22
+"Arcanine","UNB",22
+"Arcanine","UNB",22
+"Arcanine","SUM",22
+"Growlithe","LTR","RC4"
+"Growlithe","NXD",10
+"Growlithe","SUM",21
+"Growlithe","sv1",31
+"Growlithe","swsh8",32
+"Torkoal","CES",29
+"Torkoal","swsh11",23
+"Ampharos","SW",1
+"Ampharos","DAA",57
+"Ampharos","swsh6",49
+"Ampharos","swsh7",56
+"Ampharos","swsh7",56
+"Flaaffy","SW",50
+"Flaaffy","swsh6",48
+"Flaaffy","swsh7",55
+"Flaaffy","PR-SWSH","SWSH122"
+"Flaaffy","STS",39
+"Mareep","SW",94
+"Mareep","PL",82
+"Mareep","DAA",55
+"Mareep","swsh6",47
+"Mareep","swsh7",54
+"Mareep","STS",38
+"Raichu","MD",45
+"Raichu","GEN","RC9"
+"Raichu","swsh12",50
+"Raichu","swsh7",50
+"Raichu","XY",43
+"Pikachu","PK",57
+"Pikachu","CEC",66
+"Pikachu","CIN",30
+"Pikachu","swsh11",52
+"Pikachu","swsh7",49
+"Pachirisu","GE",5
+"Rotom","sv1",70
+"Crobat","SUM",56
+"Crobat","BST",91
+"Crobat","BST",91
+"Crobat","PHF",33
+"Crobat","PHF",33
+"Golbat","SUM",55
+"Golbat","BST",90
+"Golbat","BST",90
+"Golbat","PHF",32
+"Golbat","PHF",32
+"Zubat","MT",108
+"Zubat","GEN",30
+"Zubat","SUM",54
+"Zubat","sv3pt5",41
+"Zubat","swsh12",103
+"Zubat","swsh12",103
+"Gengar","DP",27
+"Gengar","sv3pt5",94
+"Gengar","swsh11",66
+"Gengar","swsh6",57
+"Gengar","BKT",60
+"Haunter","DP",50
+"Haunter","GEN",34
+"Haunter","sv3pt5",93
+"Haunter","swsh11",65
+"Haunter","swsh6",56
+"Gastly","DP",82
+"Gastly","AR",36
+"Gastly","sv3pt5",92
+"Gastly","swsh11",64
+"Gastly","swsh6",55
+"Gastly","BKT",58
+"Cleffa","svp",37
+"Wobbuffet","PHF",36
+"Lucario","BUS",71
+"Lucario","UPR",67
+"Lucario","PR-SM","SM95"
+"Lucario","swsh9",79
+"Lucario","PR-SWSH","SWSH186"
+"Riolu","PL",91
+"Riolu","UNM",115
+"Riolu","BUS",70
+"Riolu","swsh12pt5",71
+"Riolu","swsh9",78
+"Tyranitar","MT",17
+"Tyranitar","SF",30
+"Tyranitar","pgo",43
+"Tyranitar","DAA",88
+"Tyranitar","DAA",88
+"Pupitar","DF",58
+"Pupitar","pgo",38
+"Pupitar","LOT",116
+"Pupitar","DAA",87
+"Pupitar","DAA",87
+"Larvitar","SF",63
+"Larvitar","pgo",37
+"Larvitar","DAA",86
+"Larvitar","FAC",40
+"Larvitar","FAC",41
+"Larvitar","FAC",41
+"Honchkrow","MT",10
+"Honchkrow","GRI",79
+"Honchkrow","UPR",72
+"Honchkrow","swsh11",115
+"Honchkrow","swsh12",107
+"Murkrow","MT",90
+"Murkrow","UNM",128
+"Murkrow","GRI",78
+"Murkrow","swsh12",106
+"Murkrow","BST",93
+"Weavile","DP",40
+"Weavile","BUS",86
+"Weavile","UPR",74
+"Weavile","sv2",134
+"Weavile","swsh9",87
+"Sneasel","DP",100
+"Sneasel","UPR",73
+"Sneasel","STS",60
+"Sneasel","FLF",50
+"Sneasel","FLF",51
+"Absol","GRI",81
+"Absol","swsh12pt5",76
+"Absol","swsh8",164
+"Absol","ROS",40
+"Sableye","DEX",62
+"Sableye","SW",63
+"Sableye","SF",48
+"Sableye","AOR",44
+"Spiritomb","SLG",47
+"Spiritomb","STS",62
+"Aggron","DRX",80
+"Aggron","CIN",67
+"Aggron","swsh12pt5",89
+"Aggron","DAA",123
+"Aggron","swsh6",111
+"Lairon","PLB",58
+"Lairon","CIN",66
+"Lairon","swsh12pt5",88
+"Lairon","DAA",122
+"Lairon","swsh6",110
+"Aron","PLB",57
+"Aron","PK",42
+"Aron","PK",42
+"Aron","swsh12pt5",87
+"Aron","DAA",121
+"Aron","swsh6",109
+"Metagross","LA",10
+"Metagross","CES",95
+"Metagross","swsh12",119
+"Metagross","VIV",118
+"Metagross","AOR",49
+"Metang","LA",64
+"Metang","LA",65
+"Metang","swsh12pt5",90
+"Metang","VIV",117
+"Metang","AOR",48
+"Beldum","LA",83
+"Beldum","LA",84
+"Beldum","SV",90
+"Beldum","swsh12",117
+"Beldum","VIV",116
+"Beldum","AOR",47
+"Bronzong","MT",6
+"Bronzong","SF",13
+"Bronzong","TEU",101
+"Bronzong","PR-SWSH","SWSH091"
+"Bronzong","PR-XY","XY21"
+"Bronzor","AR",34
+"Bronzor","TEU",100
+"Bronzor","TEU",100
+"Bronzor","swsh10",111
+"Bronzor","FAC",60
+"Salamence","PLB",64
+"Salamence","DRV",8
+"Salamence","CES",106
+"Salamence","PR-SM","SM140"
+"Salamence","swsh7",109
+"Shelgon","PLB",63
+"Shelgon","DRM",43
+"Shelgon","DRM",43
+"Shelgon","swsh7",108
+"Shelgon","ROS",56
+"Bagon","PLB",62
+"Bagon","CES",104
+"Bagon","DRM",42
+"Bagon","swsh7",107
+"Bagon","ROS",54
+"Bagon","ROS",55
+"Garchomp","LTR",96
+"Garchomp","DRX",90
+"Garchomp","UPR",99
+"Garchomp","FLI",62
+"Garchomp","swsh9",109
+"Gabite","DRX",89
+"Gabite","DRX",89
+"Gabite","UPR",98
+"Gabite","FLI",61
+"Gabite","swsh9",108
+"Gible","DRX",87
+"Gible","UPR",96
+"Gible","UPR",97
+"Gible","FLI",60
+"Gible","swsh9",107
+"Gible","BKP",68
+"Bibarel","UNM",172
+"Bibarel","swsh9",121
+"Bibarel","swsh9",121
+"Bibarel","swsh9",121
+"Bibarel","swsh9",121
+"Bibarel","swsh9",121
+"Bibarel","PR-SWSH","SWSH188"
+"Bibarel","PRC",118
+"Bidoof","UNM",171
+"Bidoof","swsh12pt5",111
+"Bidoof","swsh12pt5",111
+"Bidoof","swsh12pt5",111
+"Bidoof","swsh9",120
+"Bidoof","swsh9",120
+"Bidoof","swsh9",120
+"Bidoof","PRC",116
+"Snorlax","pgo",55
+"Snorlax","RCL",141
+"Snorlax","VIV",131
+"Snorlax","PR-SWSH","SWSH068"
+"Meowth","FAC",74
+"Farfetch'd","TEU",127
+"Chatot","MD",55
+"Cleffa","CL",24
+"Ditto ◇","LOT",154
+"Kangaskhan","DRM",55
+"Munchlax","UNM",173
+"Skarmory","ROS",69
+"Zangoose","PK",25
+"Zangoose","PL",66
+"Cleffa","cel25c",20
+"Ace Trainer","AOR",69
+"Acerola","BUS",112
+"Agatha","swsh6",129
+"Archie's Ace in the Hole","PRC",124
+"Arven","sv1",166
+"Ball Guy","swsh45",57
+"Bea","VIV",147
+"Bird Keeper","DAA",159
+"Blacksmith","FLF",88
+"Blaine's Last Stand","DRM",58
+"Blue's Tactics","UNM",188
+"Brandon","swsh12",151
+"Brigette","BKT",134
+"Brock's Grit","TEU",135
+"Bruno","BST",121
+"Caitlin","PLB",78
+"Candice","swsh12",152
+"Cheryl","BST",123
+"Clemont","GEN",59
+"Colress","PLS",118
+"Copycat","CES",127
+"Crasher Wake","FLI",104
+"Cynthia","UPR",119
+"Cyrus ◇","UPR",120
+"Delinquent","BKP","98a"
+"Erika's Hospitality","TEU",140
+"Faba","LOT",173
+"Falkner","sv2",180
+"Felicity's Drawing","GE",98
+"Fisherman","BKT",136
+"Friends in Sinnoh","swsh12pt5",131
+"Gardenia","UPR",124
+"Gardenia's Vigor","swsh10",143
+"Giovanni's Scheme","BKT",138
+"Gloria","swsh9",141
+"Green's Exploration","UNB",175
+"Iono","sv2",185
+"Jasmine","TEU",145
+"Jessie & James","HIF",58
+"Judge","swsh8",235
+"Kiawe","BUS",116
+"Koga's Trap","UNB",177
+"Korrina","FFI",95
+"Lance","swsh12",159
+"Lance ◇","DRM",61
+"Leon","VIV",154
+"Leon","VIV",154
+"Lillie","UPR",125
+"Lillie","UPR",125
+"Looker","UPR",126
+"Looker's Investigation","PL",109
+"Lt. Surge's Strategy","HIF",60
+"Lusamine","CIN",96
+"Mallow","GRI",127
+"Marnie","CPA",56
+"Maxie's Hidden Ball Trick","PRC",133
+"Mela","sv4",167
+"Miriam","sv1",179
+"Misty's Determination","BKP",104
+"Morty","LOT",186
+"N","DEX",96
+"Nessa","VIV",157
+"Ninja Boy","STS",103
+"Piers","DAA",165
+"Pokémon Center Lady","SSH",176
+"Pokémon Fan Club","GEN",69
+"Pokémon Ranger","STS",104
+"Professor Birch","PK",80
+"Professor Birch's Observations","PRC",134
+"Professor Elm's Lecture","LOT",188
+"Professor Juniper","BW",101
+"Professor Kukui","SUM",128
+"Professor Oak's New Theory","HS",101
+"Professor Oak's Setup","CEC",201
+"Professor Sycamore","XY",122
+"Professor’s Research (Professor Oak)","cel25",23
+"Professor’s Research (Professor Oak)","cel25",23
+"Professor’s Research (Professor Oak)","cel25",23
+"Professor’s Research (Professor Oak)","cel25",23
+"Professor's Research","swsh9",147
+"Professor's Research","swsh9",147
+"Professor's Research","swsh9",147
+"Professor's Research","swsh9",147
+"Raihan","swsh7",152
+"Red's Challenge","UNB",184
+"Riley","swsh11",166
+"Rocket's Admin.","TRR",86
+"Roseanne's Backup","swsh9",148
+"Roseanne's Research","SW",125
+"Roxanne","swsh10",150
+"Scott","PK",81
+"Serena","swsh12",164
+"Sidney","swsh8",241
+"Skyla","BKT",148
+"Sonia","CPA",65
+"Sophocles","BUS",123
+"Steven's Advice","PK",83
+"Steven's Resolve","CES",145
+"Steven's Resolve","CES",145
+"Tate & Liza","CES",148
+"Team Rocket's Handiwork","FAC",112
+"Teammates","PRC",141
+"TV Reporter","CES",149
+"Volkner","UPR",135
+"Wallace","swsh12",166
+"Wally","ROS",94
+"Welder","UNB",189
+"Winona","ROS",96
+"Zinnia","DRM",64
+"Zinnia's Resolve","swsh7",164
+"Aqua Patch","GRI",119
+"Aqua Patch","GRI",119
+"Canceling Cologne","swsh10",136
+"Capacious Bucket","RCL",156
+"Capacious Bucket","RCL",156
+"Capturing Aroma","swsh12",153
+"Dark Patch","DEX",93
+"Dark Patch","DEX",93
+"Dark Patch","DEX",93
+"Dark Patch","DEX",93
+"Dive Ball","PRC",125
+"Dive Ball","PRC",125
+"Electric Generator","sv1",170
+"Electric Generator","sv1",170
+"Electropower","LOT",172
+"Electropower","LOT","172a"
+"Energy Loto","swsh10",140
+"Energy Loto","swsh10",140
+"Energy Loto","swsh10",140
+"Energy Loto","swsh10",140
+"Energy Recycler","GRI",123
+"Energy Recycler","BST",124
+"Energy Recycler","AOR",72
+"Energy Search","BW",93
+"Energy Search","DP",117
+"Energy Search","MD",90
+"Energy Search","SSH",161
+"Energy Spinner","UNB",170
+"Energy Spinner","UNB",170
+"Energy Spinner","UNB",170
+"Energy Spinner","UNB",170
+"Energy Switch","GEN",61
+"Energy Switch","CES",129
+"Evolution Incense","SSH",163
+"Evolution Incense","SSH",163
+"Evolution Incense","SSH",163
+"Evolution Incense","SSH",163
+"Evosoda","GEN",62
+"Evosoda","GEN",62
+"Evosoda","XY",116
+"Evosoda","XY",116
+"Feather Ball","swsh10",141
+"Fiery Flint","DRM","60a"
+"Fiery Flint","DRM","60a"
+"Fiery Torch","FLF",89
+"Fiery Torch","FLF",89
+"Fire Crystal","UNB",173
+"Fire Crystal","UNB",173
+"Fog Crystal","swsh6",140
+"Fog Crystal","swsh6",140
+"Great Ball","BCR",129
+"Great Ball","SUM",119
+"Great Ball","CPA",52
+"Great Ball","BKP",100
+"Gutsy Pickaxe","swsh10",145
+"Gutsy Pickaxe","swsh10",145
+"Gutsy Pickaxe","swsh10",145
+"Gutsy Pickaxe","swsh10",145
+"Heavy Ball","BKT",140
+"Hisuian Heavy Ball","swsh10",146
+"Hisuian Heavy Ball","swsh10",146
+"Hypnotoxic Laser","PLS",123
+"Level Ball","NXD",89
+"Level Ball","NXD",89
+"Level Ball","AOR",76
+"Level Ball","AOR",76
+"Master Ball","PLB",94
+"Max Potion","GRI","128a"
+"Max Revive","GEN",65
+"Metal Saucer","SSH",170
+"Metal Saucer","SSH",170
+"Metal Saucer","SSH",170
+"Metal Saucer","SSH",170
+"Multi Switch","GRI",129
+"Mysterious Treasure","FLI","113a"
+"Mysterious Treasure","FLI","113a"
+"Nest Ball","SUM",123
+"Nest Ball","SUM",123
+"Nest Ball","SUM",123
+"Nest Ball","SUM",123
+"Net Ball","LOT",187
+"Net Ball","LOT","187a"
+"Ordinary Rod","SSH",171
+"Ordinary Rod","SSH",171
+"Pal Pad","UPR",132
+"Pal Pad","sv1",182
+"Pal Pad","SSH",172
+"Pal Pad","FLF",92
+"Poké Radar","LA",133
+"Pokédex HANDY910is","DP",111
+"Pokédex HANDY910is","PL",114
+"Pokémon Communication","HS",98
+"Pokémon Communication","HS",98
+"Pokémon Communication","TEU",152
+"Pokémon Communication","TEU",152
+"PokéNav","CES",140
+"Professor's Letter","BKT",146
+"Professor's Letter","BKT",146
+"Professor's Letter","BKT",146
+"Professor's Letter","BKT",146
+"Quick Ball","SSH",179
+"Quick Ball","SSH",179
+"Quick Ball","SSH",179
+"Quick Ball","SSH",179
+"Red Card","XY",124
+"Reset Stamp","UNM",206
+"Revitalizer","GEN",70
+"Revitalizer","GEN",70
+"Revive","BW",102
+"Revive","BW",102
+"Revive","ROS",88
+"Revive","ROS",88
+"Special Charge","STS",105
+"Special Charge","STS",105
+"Stadium Nav","UNM",208
+"Stadium Nav","UNM",208
+"Super Rod","NVI",95
+"Super Rod","BKT",149
+"Superior Energy Retrieval","PLF",103
+"Superior Energy Retrieval","sv2",189
+"Switch","BW",104
+"Switch","DP",119
+"Switch","SLG",67
+"Switch","CES",147
+"Switch","sv1",194
+"Switch","sv1",194
+"Switch","SSH",183
+"Switch","ROS",91
+"Timer Ball","SUM",134
+"Timer Ball","SUM",134
+"Tool Scrapper","DRX",116
+"Tool Scrapper","RCL",168
+"Town Map","BKT",150
+"Town Map","BKT",150
+"Ultra Ball","swsh9",150
+"Ultra Ball","swsh9",150
+"Ultra Ball","swsh9",150
+"Ultra Ball","swsh9",150
+"VS Seeker","SV",140
+"VS Seeker","SV",140
+"VS Seeker","SV",140
+"VS Seeker","SV",140
+"Aether Paradise Conservation Area","GRI",116
+"All-Night Party","BKP",96
+"Artazon","sv2",171
+"Aspertia City Gym","BCR",127
+"Beach Court","sv1",167
+"Broken Time-Space","PL",104
+"Brooklet Hill","GRI",120
+"Collapsed Stadium","swsh9",137
+"Crystal Cave","swsh7",144
+"Cycling Road","sv3pt5",157
+"Dark City","UNM",193
+"Devoured Field","CIN",93
+"Dimension Valley","PHF",93
+"Galar Mine","RCL",160
+"Giant Hearth","UNM",197
+"Jubilife Village","swsh10",148
+"Lake Acuity","swsh11",160
+"Lavender Town","TEU",147
+"Magma Basin","swsh9",144
+"Martial Arts Dojo","UNB",179
+"Mesagoza","sv1",178
+"Moonlight Stadium","GE",100
+"Mt. Coronet","UPR",130
+"Old Cemetery","swsh6",147
+"PokéStop","pgo",68
+"Rough Seas","PRC",137
+"Scorched Earth","FAC",110
+"Shadow Circle","XY",126
+"Silent Lab","PRC",140
+"Sky Field","ROS",89
+"Sky Pillar","CES",144
+"Steel Shelter","PHF",105
+"Stormy Mountains","swsh7",161
+"Temple of Sinnoh","swsh10",155
+"Town Store","sv3",196
+"Training Center","FFI",102
+"Training Court","RCL",169
+"Turffield Stadium","RCL",170
+"Virbank City Gym","PLS",126
+"Viridian Forest","TEU",156
+"Air Balloon","SSH",156
+"Big Charm","SSH",158
+"Bodybuilding Dumbbells","BUS",113
+"Cape of Toughness","DAA",160
+"Dark Claw","DEX",92
+"Dragon Talon","DRM",59
+"Escape Board","UPR","122a"
+"Eviolite","PLS",122
+"Exp. Share","SUM",118
+"Focus Sash","FFI",91
+"Karate Belt","UNM",201
+"Leftovers","sv3pt5",163
+"Lum Berry","SSH",168
+"Metal Core Barrier","UNB",180
+"Metal Frying Pan","FLI","112a"
+"Metal Goggles","TEU",148
+"Poison Barb","SUM",124
+"Pot Helmet","swsh9",146
+"Rock Chestplate","sv1",192
+"Rocky Helmet","sv1",193
+"Weakness Policy","BUS",126
+"Wishful Baton","BUS",128
+"Therapeutic Energy","sv2",193
+"Aromatic Grass Energy","VIV",162
+"Aurora Energy","SSH",186
+"Aurora Energy","SSH",186
+"Aurora Energy","SSH",186
+"Aurora Energy","SSH",186
+"Blend Energy GrassFirePsychicDarkness","DRX",117
+"Blend Energy WaterLightningFightingMetal","DRX",118
+"Burning Energy","BKT",151
+"Capture Energy","RCL",171
+"Coating Metal Energy","VIV",163
+"Counter Energy","CIN",100
+"Dangerous Energy","AOR",82
+"Double Colorless Energy","FAC",114
+"Double Colorless Energy","FAC",114
+"Double Colorless Energy","FAC",114
+"Double Colorless Energy","FAC",114
+"Double Dragon Energy","ROS",97
+"Double Dragon Energy","ROS",97
+"Draw Energy","CEC",209
+"Flash Energy","AOR",83
+"Gift Energy","swsh11",171
+"Heat Fire Energy","DAA",174
+"Herbal Energy","FFI",103
+"Hiding Darkness Energy","DAA",175
+"Horror Psychic Energy","RCL",172
+"Mystery Energy","PHF",112
+"Powerful Colorless Energy","DAA",176
+"Powerful Colorless Energy","DAA",176
+"Prism Energy","NXD",93
+"Rainbow Energy","PL",121
+"Rainbow Energy","SUM",137
+"Rainbow Energy","CES",151
+"Rainbow Energy","XY",131
+"Recycle Energy","UNM",212
+"Reversal Energy","sv2",192
+"Shield Energy","PRC",143
+"Speed Lightning Energy","RCL",173
+"Splash Energy","BKP",113
+"Stone Fighting Energy","VIV",164
+"Strong Energy","FAC",115
+"Triple Acceleration Energy","UNB",190
+"Unit Energy FightingDarknessFairy","FLI",118
+"Unit Energy GrassFireWater","UPR",137
+"Unit Energy LightningPsychicMetal","UPR",138
+"Wash Water Energy","VIV",165

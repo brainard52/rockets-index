@@ -1,3 +1,6 @@
+# Specific
+test/lists/*.txt
+
 # Logs
 logs
 *.log
