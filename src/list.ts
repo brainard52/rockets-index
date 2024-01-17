@@ -108,6 +108,9 @@ function decompress(compressedValue) {
 function setUrlParameters(list) {
   let parameters = parameterize(list);
   let compressedParameters = compress(parameters);
+  if( parameters === undefined ) {
+    return
+  }
   window.location.hash = "#" + compressedParameters;
   console.log("Length of parameters", parameters.length);
   console.log("Length of compressed parameters", compressedParameters.length);
@@ -121,21 +124,26 @@ function parameterize(list: Array) {
     let setNumber = undefined;
     for(let j = 0; j < Object.keys(orderedCodes).length; j++) {
       if(orderedCodes[j]["onlineCode"] == list[i]["onlineCode"]) {
+        console.log("orderedCodes[j]", orderedCodes[j])
         let collectorNumbers = cards[orderedCodes[j]["id"]]["cards"].map(function (card) {return card["number"]}).sort();
+        console.log("list[i][\"collectorNumber\"]", list[i]["collectorNumber"])
+        console.log(collectorNumbers)
+        console.log("includes", collectorNumbers.includes(list[i]["collectorNumber"]))
+
         if(collectorNumbers.includes(list[i]["collectorNumber"])){
           parameter = parameter + j + ",";
           setNumber = j;
           break;
         }
-        else {
-          console.log(list[i])
+      }
+    }
+    if(setNumber == undefined) {
+          console.log("list", list[i])
           displayError("Could not find " + list[i]["name"] + " " + list[i]["onlineCode"] + " " + list[i]["collectorNumber"]);
           if(collectorNumbers.length > 0) {
             displayError("Other set codes from this set look like this: " + collectorNumbers[0])
-          }
-          return;
         }
-      }
+          return;
     }
     console.log(orderedCards[setNumber])
     for(let j = 0; j < Object.keys(orderedCards[setNumber]).length; j++) {
@@ -266,7 +274,7 @@ function updateImages(list) {
     let setId = undefined;
     let ids = onlineCodes[onlineCode]
 
-    for(let j = 0; j < ids.length; i++){
+    for(let j = 0; j < ids.length; j++){
       let collectorNumbers = cards[ids[j]]["cards"].map(function (card) {return card["number"]}).sort();
       if(collectorNumbers.includes(collectorNumber)) {
         setId = ids[j];
