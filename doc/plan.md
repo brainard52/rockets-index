@@ -1,31 +1,35 @@
-# Plan and design for Rocket Index
-## Creating the supporting files
-1. Turn list of all sets into numbered list
-2. Turn list of all cards in to numbered list based on their set (`[1,1]` refers to base set Alakazam and `[7,4]` refers to Neo Discovery Magnemite)
-3. Create `paste.html`
+# Plan Rockets' Index
+##The next things I plan on implementing:
 
-## paste.html
-### On load, the following should happen
-
-1. Clear `listArea`
-2. Check for a valid URL argument. 
-3. If one is present
-    1. Parse argument into list
-    2. Place the list into `listArea`
-4. If URL argument is not valid
-    1. Remove URL argument
-
-### On listArea change:
-
-1. Validate cards
-2. If invalid cards are found
-    1. Clear card display
-    2. Insert error indicating which card is invalid
-3. If list is valid:
-    1. Update URL
-    2. Update shown images
-
-### DisplayImages function:
-
-
-[example list](Charizard.md)
+1. Statistics information
+    - Counts of card types
+    - Counts of each pokemon stage for each color
+    - Counts of rule box pokemon for each color
+2. Sort by:
+    1. Card type:
+        1. Pokemon
+            1. Color
+            2. Has Rule Box - True > False
+            3. Stage - Stage 2 > Stage 1 > Basic
+                - Note: A Stage 2 will be followed by its own Stage 1 and Basic forms
+            4. Alphabetically
+        2. Supporter
+            1. Alphabetically
+            2. Set Release
+        3. Item
+            1. Alphabetically
+            2. Set Release
+        4. Pokemon Tool
+            1. Alphabetically
+            2. Set Release
+        5. Stadium
+            1. Alphabetically
+            2. Set Release
+        6. Special Energy
+            1. Alphabetically
+            2. Set Release
+        7. Basic Energy
+            1. Alphabetically
+            2. Set Release
+## Bugs
+- For some reason images sometimes jump to strange places on resize. [Example](https://brainard52.github.io/rockets-index/#IwGmAYA4QdgNgFygJwCYQGYCsSSXCFsrsBtBsaBHCACyRA~=)
