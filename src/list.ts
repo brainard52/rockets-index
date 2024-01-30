@@ -289,7 +289,11 @@ function updateImages(list) {
         break;
       }
     }
-    insertImage(card["images"]["small"], count);
+    if("large" in card["images"]){
+      insertImage(card["images"]["large"], count);
+    } else{
+      insertImage(card["images"]["small"], count);
+    }
   }
 }
 function clearDisplay() {
@@ -338,7 +342,5 @@ function getCardLine(count: Number, _set: Number, card: Number) {
 function appendToArea(area: HtMLDivElement, message: String) {
   area.innerHTML = area.innerHTML + message + '<br/>';
 }
-
-
 
 window.onload = main;
