@@ -2,10 +2,23 @@
   #listArea {
     height: 10svh;
   }
+  :root {
+   --img-width: 8.2em;
+   --img-height: 11.4em;
+   --img-width-offset: 0.5em;
+   --img-height-offset: 1.4em;
+  }
+
 }
 @media only screen and (min-width: 45em) {
   #listArea {
     height: 90svh;
+  }
+  :root {
+   --img-width: 16.8em;
+   --img-height: 23.4em;
+   --img-width-offset: 0.5em;
+   --img-height-offset: 1.4em;
   }
 }
 
@@ -74,31 +87,35 @@ form {
   grid-auto-flow: row;
   grid-template-columns: repeat(3, 1fr);
 }
+/*
+:root {
+    --img-width: 11em;
+    --img-height: 15.35em;
+    --img-width-offset: 0.5em;
+    --img-height-offset: 1.4em;
+}
+*/
 img {
-  max-width: 18svh;
+  max-width: var(--img-width);
 }
 .child {
   position: relative;
 }
-.child.one {
-    width: 18svh;
-    height: 25svh;
+.child.one, .child.more{
+    width: var(--img-width);
+    height: var(--img-height);
 }
 .child.two {
-    width: calc(18svh + (1svh * 1));
-    height: calc(25svh + (2svh * 1));
+    width: calc(var(--img-width) + (var(--img-width-offset) * 1));
+    height: calc(var(--img-height) + (var(--img-height-offset) * 1));
 }
 .child.three{
-    width: calc(18svh + (1svh * 2));
-    height: calc(25svh + (2svh * 2));
+    width: calc(var(--img-width) + (var(--img-width-offset) * 2));
+    height: calc(var(--img-height) + (var(--img-height-offset) * 2));
 }
 .child.four{
-    width: calc(18svh + (1svh * 3));
-    height: calc(25svh + (2svh * 3));
-}
-.child.more{
-    width: 18svh;
-    height: 25svh;
+    width: calc(var(--img-width) + (var(--img-width-offset) * 3));
+    height: calc(var(--img-height) + (var(--img-height-offset) * 3));
 }
 
 .stack {
@@ -110,26 +127,26 @@ img {
   background: white;
   border:0.2em solid black;
   position:relative;
-  width: 4svh;
   text-align: center;
   vertical-align: center;
-  height: 4svh;
-  top: 0.5svh;
-  left: 0.5svh;
+  width: 2em;
+  height: 2em;
+  top: 0.5em;
+  left: 0.5em;
 }
 .stack:nth-child(1) {
-  top: 0svh;
+  top: calc(var(--img-height-offset) * 0);
 }
 .stack:nth-child(2) {
-  top: 2svh;
-  left: 1svh;
+  top: calc(var(--img-height-offset) * 1);
+  left: calc(var(--img-width-offset) * 1);
 }
 .stack:nth-child(3) {
-  top: 4svh;
-  left: 2svh;
+  top: calc(var(--img-height-offset) * 2);
+  left: calc(var(--img-width-offset) * 2);
 }
 .stack:nth-child(4) {
-  top: 6svh;
-  left: 3svh;
+  top: calc(var(--img-height-offset) * 3);
+  left: calc(var(--img-width-offset) * 3);
 }
 
