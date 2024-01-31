@@ -228,7 +228,12 @@ function updateDisplay() {
   }
 }
 
-function insertImage(src, count) {
+function insertSmallImage(src, count) {
+  insertImage(src, src, count);
+
+}
+
+function insertImage(src, alt, count) {
   let numbers = ["","one", "two", "three", "four", "more"]
 
   let child = document.createElement("div");
@@ -285,9 +290,9 @@ function updateImages(list) {
       }
     }
     if("large" in card["images"]){
-      insertImage(card["images"]["large"], count);
+      insertImage(card["images"]["large"], card["images"]["small"], count);
     } else{
-      insertImage(card["images"]["small"], count);
+      insertSmallImage(card["images"]["small"], count);
     }
   }
 }
