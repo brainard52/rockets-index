@@ -8,7 +8,6 @@
    --img-width-offset: 0.5em;
    --img-height-offset: 1.4em;
   }
-
 }
 @media only screen and (min-width: 45em) {
   #listArea {
@@ -87,20 +86,13 @@ form {
   grid-auto-flow: row;
   grid-template-columns: repeat(3, 1fr);
 }
-/*
-:root {
-    --img-width: 11em;
-    --img-height: 15.35em;
-    --img-width-offset: 0.5em;
-    --img-height-offset: 1.4em;
-}
-*/
 img {
   max-width: var(--img-width);
 }
 .child {
   position: relative;
 }
+
 .child.one, .child.more{
     width: var(--img-width);
     height: var(--img-height);
