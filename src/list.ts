@@ -1,5 +1,7 @@
 import { compressToBase64 } from 'lz-string';
 import { decompressFromBase64 } from 'lz-string';
+import 'lazysizes';
+
 
 import sets from "/res/sets.json";
 import cards from "/res/cards.json";
@@ -237,8 +239,8 @@ function insertImage(src, count) {
     for(let i = 0; i < count; i++) {
       let image = document.createElement("img");
       image.classList.add("stack");
-      image.src = src;
-      image.loading = "lazy";
+      image.classList.add("lazyload");
+      image.dataset.src = src;
       child.appendChild(image);
     }
 
@@ -246,7 +248,8 @@ function insertImage(src, count) {
   else {
     let image = document.createElement("img");
     image.classList.add("stack");
-    image.src = src;
+    image.classList.add("lazyload");
+    image.dataset.src = src;
     child.appendChild(image);
     let bubble = document.createElement("div");
     bubble.classList.add("bubble");
