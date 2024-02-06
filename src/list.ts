@@ -2,12 +2,13 @@ import { compressToBase64 } from 'lz-string';
 import { decompressFromBase64 } from 'lz-string';
 import 'lazysizes';
 
-
-import sets from "/res/sets.json";
-import cards from "/res/cards.json";
-import orderedCodes from "/res/orderedCodes.json";
-import orderedCards from "/res/orderedCards.json";
-import onlineCodes from "/res/onlineCodes.json";
+import cards from "/res/min_cards.json";
+import sets_index from "/res/sets_index.json";
+import id_to_online_code from "/res/id_to_online_code.json";
+import cards_by_index from "/res/cards_by_index.json";
+import online_code_to_index from "/res/online_code_to_index.json";
+import online_codes from "/res/online_codes.json";
+import card_index_by_collector from "/res/card_index_by_collector.json"
 
 const submitButton = document.getElementById("submitButton")! as HTMLInputElement;
 const copyButton = document.getElementById("copyButton")! as HTMLInputElement;
@@ -83,8 +84,9 @@ function loadUrlParameters() {
   let newListAreaContent = ""
   for (let i = 0; i< parameterCards.length; i++) {
     let [count, _set, card]= parameterCards[i].split(",");
-    if(!(_set in orderedCodes) || !(card in orderedCards[_set])) {
+    if(!(_set in sets_index) || !(card in cards_by_index[_set])) {
       errorCards.push({"set": _set, "card": card});
+      console.log(i + " error: " + parameterCards[i])
       continue;
     }
 
@@ -92,9 +94,7 @@ function loadUrlParameters() {
   }
   listArea.value = newListAreaContent;
   if(errorCards.length>0) {
-    for(let i = 0; i < errorCards.length; i++) {
-      displayError("card " + errorCards[i]["card"] + " from set " + errorCards[i]["set"] + " does not exist.");
-    }
+    displayError("This URL is broken. This really shouldn't have happened. Please make fun of Landon on Discord (Username: brainard50) and give him the broken URL. You can alternatively file a bug on Github. Either way, as repentance for his grievous sin he will do his best to extract the list from the URL and provide it to you.")
     return;
   }
   updateDisplay();
@@ -122,29 +122,20 @@ function parameterize(list: Array) {
   for(let i = 0; i<list.length; i++) {
     let parameter = list[i]["count"]+ ",";
     let setNumber = undefined;
-    for(let j = 0; j < Object.keys(orderedCodes).length; j++) {
-      if(orderedCodes[j]["onlineCode"] == list[i]["onlineCode"]) {
-        let collectorNumbers = cards[orderedCodes[j]["id"]]["cards"].map(function (card) {return card["number"]}).sort();
-
-        if(collectorNumbers.includes(list[i]["collectorNumber"])){
-          parameter = parameter + j + ",";
-          setNumber = j;
+    let collectorNumber = undefined;
+    if(list[i]["onlineCode"] in online_code_to_index) {
+      for(let j = 0; j < online_code_to_index[list[i]["onlineCode"]].length; j++){
+        if(list[i]["collectorNumber"] in card_index_by_collector[online_code_to_index[list[i]["onlineCode"]][j]]){
+          setNumber = online_code_to_index[list[i]["onlineCode"]];
+          collectorNumber = card_index_by_collector[online_code_to_index[list[i]["onlineCode"]][j]][list[i]["collectorNumber"]]
+          parameter = parameter + setNumber + "," + collectorNumber + ":";
           break;
         }
       }
     }
-    if(setNumber == undefined) {
-          displayError("Could not find " + list[i]["name"] + " " + list[i]["onlineCode"] + " " + list[i]["collectorNumber"]);
-          if(collectorNumbers.length > 0) {
-            displayError("Other set codes from this set look like this: " + collectorNumbers[0])
-        }
-          return;
-    }
-    for(let j = 0; j < Object.keys(orderedCards[setNumber]).length; j++) {
-      if(list[i]["collectorNumber"] == orderedCards[setNumber][j]["number"]) {
-        parameter = parameter + j + ":";
-        break;
-      }
+    if(setNumber == undefined || collectorNumber == undefined) {
+      displayError("Could not find " + list[i]["name"] + " " + list[i]["onlineCode"] + " " + list[i]["collectorNumber"]);
+      return;
     }
     if(single_parameter_regex.test(parameter)){
       parameters = parameters + parameter;
@@ -156,7 +147,7 @@ function parameterize(list: Array) {
 function validateList(list: Array) {
   // 2 Charmander MEW 4
   let errorCards = [];
-  let keys = Object.keys(onlineCodes).sort();
+  let keys = Object.keys(online_codes).sort();
   for(let i = 0; i<list.length; i++) {
     if(!(keys.includes(list[i]["onlineCode"]))) {
       // Will probably break when trying to consume basic energy lines
@@ -164,10 +155,10 @@ function validateList(list: Array) {
       errorCards.push(list[i]);
       continue;
     }
-    let codeArray = onlineCodes[list[i]["onlineCode"]]
+    let codeArray = online_codes[list[i]["onlineCode"]]
     let collectorNumbers = [];
     for(let i = 0; i<codeArray.length; i++) {
-      collectorNumbers = collectorNumbers + cards[codeArray[i]]["cards"].map(function (card) {return card["number"]}).sort();
+      collectorNumbers = collectorNumbers + cards[codeArray[i]].map(function (card) {return card["number"]}).sort();
     }
     if(!(collectorNumbers.includes(list[i]["collectorNumber"]))){
       console.log("collectorNumber Error", list[i]["name"], list[i])
@@ -228,12 +219,8 @@ function updateDisplay() {
   }
 }
 
-function insertSmallImage(src, count) {
-  insertImage(src, src, count);
 
-}
-
-function insertImage(src, alt, count) {
+function insertImage(src, count) {
   let numbers = ["","one", "two", "three", "four", "more"]
 
   let child = document.createElement("div");
@@ -248,7 +235,6 @@ function insertImage(src, alt, count) {
       image.dataset.src = src;
       child.appendChild(image);
     }
-
   }
   else {
     let image = document.createElement("img");
@@ -271,31 +257,27 @@ function updateImages(list) {
     let name = list[i]["name"]
     let onlineCode = list[i]["onlineCode"]
     let collectorNumber = list[i]["collectorNumber"]
-    let setId = undefined;
-    let ids = onlineCodes[onlineCode]
-
-    for(let j = 0; j < ids.length; j++){
-      let collectorNumbers = cards[ids[j]]["cards"].map(function (card) {return card["number"]}).sort();
-      if(collectorNumbers.includes(collectorNumber)) {
-        setId = ids[j];
-        break;
-      }
-    }
-    let _cards = cards[setId]["cards"];
     let card = undefined;
-    for(let j = 0; j < _cards.length; j++) {
-      if(_cards[j]["number"] == collectorNumber){
-        card = _cards[j];
+    let indices = online_code_to_index[onlineCode]
+
+    for(let j = 0; j < indices.length; j++){
+      console.log(cards_by_index[indices[j]])
+      if(collectorNumber in card_index_by_collector[indices[j]]){
+        card = cards_by_index[indices[j]][card_index_by_collector[indices[j]][collectorNumber]];
         break;
       }
     }
-    if("large" in card["images"]){
-      insertImage(card["images"]["large"], card["images"]["small"], count);
-    } else{
-      insertSmallImage(card["images"]["small"], count);
+
+    if(card == undefined){
+      displayError("This card does not exist: " + count + " " + name + " " + onlineCode + " " + collectorNumber);
+      return;
+    }
+    if("image" in card){
+      insertImage(card["image"], count);
     }
   }
 }
+
 function clearDisplay() {
   displayArea.innerHTML = ""
 }
@@ -336,7 +318,7 @@ function displayError(message: String) {
 }
 
 function getCardLine(count: Number, _set: Number, card: Number) {
-  return count + ' ' + orderedCards[_set][card]["name"] + ' ' + orderedCodes[_set]["onlineCode"] + ' ' + orderedCards[_set][card]["number"];
+  return count + ' ' + cards_by_index[_set][card]["name"] + ' ' + sets_index[_set]["onlineCode"] + ' ' + cards_by_index[_set][card]["number"];
 }
 
 function appendToArea(area: HtMLDivElement, message: String) {
