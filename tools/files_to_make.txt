@@ -1,6 +1,0 @@
-cards.json - trim_unnecessary_from_cards.py
-indexes.json - make_indexes_file.py
-cards_by_index.json - make_cards_by_index_file.py
-alternate_codes.json - make_alternate_codes_file.py
-symbol_replacement.json - make_symbol_replacemen_file.py
-
