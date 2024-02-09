@@ -126,7 +126,7 @@ function parameterize(list: Array) {
     if(list[i]["onlineCode"] in online_code_to_index) {
       for(let j = 0; j < online_code_to_index[list[i]["onlineCode"]].length; j++){
         if(list[i]["collectorNumber"] in card_index_by_collector[online_code_to_index[list[i]["onlineCode"]][j]]){
-          setNumber = online_code_to_index[list[i]["onlineCode"]];
+          setNumber = online_code_to_index[list[i]["onlineCode"]][j];
           collectorNumber = card_index_by_collector[online_code_to_index[list[i]["onlineCode"]][j]][list[i]["collectorNumber"]]
           parameter = parameter + setNumber + "," + collectorNumber + ":";
           break;
@@ -139,6 +139,9 @@ function parameterize(list: Array) {
     }
     if(single_parameter_regex.test(parameter)){
       parameters = parameters + parameter;
+    } else {
+      displayError("URL Parameter broken", parameter)
+      return;
     }
   }
   return parameters.slice(0,-1);// the slice removes the trailing : that gets added with the final card
@@ -261,7 +264,6 @@ function updateImages(list) {
     let indices = online_code_to_index[onlineCode]
 
     for(let j = 0; j < indices.length; j++){
-      console.log(cards_by_index[indices[j]])
       if(collectorNumber in card_index_by_collector[indices[j]]){
         card = cards_by_index[indices[j]][card_index_by_collector[indices[j]][collectorNumber]];
         break;
