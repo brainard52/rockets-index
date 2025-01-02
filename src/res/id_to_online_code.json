@@ -118,7 +118,7 @@
   "sm10": "UNB",
   "sm11": "UNM",
   "sm115": "HIF",
-  "sma": "SMA",
+  "sma": "HIF",
   "mcd19": "MCD19",
   "sm12": "CEC",
   "swshp": "PR-SW",
@@ -157,5 +157,9 @@
   "sv3pt5": "MEW",
   "sv4": "PAR",
   "sv4pt5": "PAF",
-  "sv5": "TEF"
+  "sv5": "TEF",
+  "sv6": "TWM",
+  "sv6pt5": "SFA",
+  "sv7": "SCR",
+  "sv8": "SSP"
 }

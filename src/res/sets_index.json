@@ -477,7 +477,7 @@
   },
   "119": {
     "id": "sma",
-    "onlineCode": "SMA"
+    "onlineCode": "HIF"
   },
   "120": {
     "id": "mcd19",
@@ -634,5 +634,21 @@
   "158": {
     "id": "sv5",
     "onlineCode": "TEF"
+  },
+  "159": {
+    "id": "sv6",
+    "onlineCode": "TWM"
+  },
+  "160": {
+    "id": "sv6pt5",
+    "onlineCode": "SFA"
+  },
+  "161": {
+    "id": "sv7",
+    "onlineCode": "SCR"
+  },
+  "162": {
+    "id": "sv8",
+    "onlineCode": "SSP"
   }
 }
