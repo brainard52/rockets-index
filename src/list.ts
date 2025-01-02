@@ -189,6 +189,9 @@ function listify(rawList: Array) {
   let list = [];
   for(let i = 0; i < rawList.length; i++) {
     let card = rawList[i].split(" ");
+    if (isNaN(Number(card[0]))) {
+      displayError("You need to add an amount for this card: " + rawList[i]);
+    }
     list.push({
       "count": Number(card[0]),
       "name": card.slice(1, -2).join(" "),
